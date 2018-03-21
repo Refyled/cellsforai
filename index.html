@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="UTF-8">
+ 	<center>
+ 		<title>Cells For AI</title>
+ 		<script src="/socket.io/socket.io.js"></script>
+ 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 		<link rel="stylesheet" type="text/css" href="style.css">
+ 		<style>
+
+ 		</style>
+
+ 	</head>
+
+ 	<body style>
+
+ 		<div id="mySidenav" class="sidenav">
+ 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+ 			<p>Settings</p>
+ 			<input type="checkbox" name="showWeights" id="showWeights" onclick="changeShowWeights()" />
+ 			<label for="showWeights"> show weights</label><br />
+ 			<input type="checkbox" name="transparency" id="transparency" onclick="changeTransparency()" />
+ 			<label for="transparency"> transparency</label><br /><br /><br />
+ 			<p>Grid Size<br />
+ 			<input id="gridSize" type="number" /></p>
+ 			<p>Number of Players<br />
+ 			<input id="numberOfPlayers" type="number" /></p>
+ 			<p>Initial weight<br />
+ 			<input id="intialweights" type="number" /></p>
+ 			<p>Number of Vitamins<br />
+ 			<input id="numberOfVitamins" type="number" /></p>
+ 			<p>Timer (0 for no timer) <br />
+ 			<input id="timer" type="number" /></p>
+ 			<br /><br /><br />
+ 			<button type="button" onclick="fire()">Fire New Game</button> 
+ 		</div>
+
+ 			<!-- Use any element to open the sidenav -->
+
+
+ 			<div class="row">
+ 				<div class="col-sm-2">
+
+ 					<div onclick="openNav()">
+ 						<div class="button"></div>
+ 						<div class="button"></div>
+ 						<div class="button"></div>
+ 					</div> 
+
+ 					<h1>Live View</h1>
+ 					<div id='playersList'></div>
+
+
+
+ 				</div>
+ 				<div class="col-sm-10">
+ 					<br>
+
+ 					<canvas id="canvas" width="600" height="600"></canvas>
+
+
+
+
+ 				</div>
+ 				<div class="col-sm-2"></div>
+
+ 			</div>
+ 			<script src="script.js"></script> 
+ 			<script src="sidebar.js"></script> 
+ 		</body>
+
+ 		</html> 
+
+
