@@ -24,7 +24,7 @@ Clone the git repository with
 
 		
 
-		$ git clone https://github.com/libgit2/libgit2
+		$ git clone https://github.com/ElJew/cellsforai
 
 
 Simply install with 
