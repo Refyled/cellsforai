@@ -58,7 +58,7 @@ var ctx = canvas.getContext('2d');
 
 //parametres d'affichage et couleurs
 //les couleurs, par players
-const colorsArray = ['rgba(40, 50, 40,','rgba(198, 34, 5,','rgba(1, 69, 106,','rgba(1, 112, 110,'],'rgba(200, 110, 110,','rgba(80, 240, 97,','rgba(76, 112, 220,','rgba(10, 10, 200,';
+const colorsArray = ['rgba(40, 50, 40,','rgba(198, 34, 5,','rgba(1, 69, 106,','rgba(1, 112, 110,','rgba(200, 110, 110,','rgba(80, 240, 97,','rgba(76, 112, 220,','rgba(10, 10, 200,'];
 
 const textColor = '#cee6d8';
 const ligneStyle = {
