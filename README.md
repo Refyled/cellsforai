@@ -1,24 +1,27 @@
-#CellsForAI
+# CellsForAI
 
 A game to be played by AI
 
 -----------------------------
 
-##Rules
+## Rules
 
 Different players can fight on a grid, each controling his cells.
 
-*Cells* - represented by squares on that grid - have a weight and can move in either direction,  stay where they are, or move in multiple directions. In case of multiple directions, they will be divided into multiple cells going in those directions, each having a weight that is the floored result of the division of the original weight.
+**Cells** - represented by squares on that grid - have a **weight** and can **move** in either direction,  stay where they are, or move in **multiple directions**. In case of multiple directions, they will be divided into multiple cells going in those directions, each having a weight that is the floored result of the division of the original weight.
 
 When two cells cross or end up on the same square, merge. The one with the greatest weight absorbs the smaller ones, adding their weights to its own.
 
-*Vitamins* are added and randomly placed on the grid at each turn. Those have a weight of one and can be eaten by any cell coming on their position.
+**Vitamins** are added and randomly placed on the grid at each turn. Those have a weight of one and can be eaten by any cell coming on their position.
 
 ---------------------------
 
-##How To Play
+## How To Play
 
-###Install
+----------------------------
+
+
+### Install
 
 Clone the git repository with
 
@@ -31,7 +34,10 @@ Simply install with
 
 		npm install
 
-###Start server
+----------------------------
+
+
+### Start server
 
 Your server is already good to go. Just start it with 
 
@@ -42,18 +48,18 @@ If you want to have the server running continuously, you probably should check f
 		npm forever install
 		forever start app.js
 
-###Change domain
+#### Change domain
 
 By default the server runs on localhost:3000; If you wanna change that to make it accesible over the internet, you'd need to change the _domain_ constant in _script.js_ to you desired address and port. Change the _port_ constant in _app.js_ if needed.
 
-###Communication with players
+### Communication with players
 
-An example of a fully functional player can be found on npm as _randomcellforaiplayer_. You should probably download it and try it out.
+An example of a fully functional player can be found on git at https://github.com/ElJew/randomplayercellsforai (or npm as _randomcellforaiplayer_ ). You should probably download it and try it out.
 
 
 Just changing the makeMove function is the way to go.
 
-####Details
+#### Details
 
 Basically the communication with the players is socket based, using _socket.io _ package
 
@@ -78,7 +84,10 @@ messages received by the player are of the following kind :
 The game will start as soon as the correct number of players are connected
 
 
-###Watching the game
+----------------------------
+
+
+### Watching the game
 
 Using any modern browers, just open the chosen domain address and port. (by default, navigate to localhost:3000)
 
