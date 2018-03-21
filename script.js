@@ -33,7 +33,7 @@ socket.on("roomSettings",function(data){
 socket.on("players",function(data){
 	console.log('list of players recu');
 	console.log(data);
-	par.players = par.players.concat(data);
+	par.players = ['o'].concat(data);
 
 	var liste = document.getElementById('playersList');
 
