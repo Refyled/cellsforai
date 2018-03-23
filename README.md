@@ -27,12 +27,12 @@ Clone the git repository with
 
 		
 
-		$ git clone https://github.com/ElJew/cellsforai
+	$ git clone https://github.com/ElJew/cellsforai
 
 
-Simply install with 
+Simply install while in the newly created directory with 
 
-		npm install
+	npm install
 
 ----------------------------
 
@@ -41,12 +41,12 @@ Simply install with
 
 Your server is already good to go. Just start it with 
 
-		node ./node_modules/cellsforai/app.js
+	node app.js
 
 If you want to have the server running continuously, you probably should check for the _forever_ package and do :
 
-		npm forever install
-		forever start app.js
+	npm  install forever -g
+	forever start app.js
 
 #### Change domain
 
@@ -74,11 +74,11 @@ messages received by the player are of the following kind :
 + _playerID_ : having our name as data. relevant only if we sent 'default' previously as a name.
 + _state_ : marks the beginning of a new turn and states the current position on the grid, stored as an array of cells, each being an object ressembling this :
 
-		{	id:<id>,
-			x:<x>,
-			y:<y>,
-			player:<player's name>,
-			weight:<weight>}
+	{	id:<id>,
+		x:<x>,
+		y:<y>,
+		player:<player's name>,
+		weight:<weight>}
 
 
 The game will start as soon as the correct number of players are connected
@@ -95,7 +95,7 @@ Note that a sliding pannel can be toogled to change the appearance
 
 Of course custom view can be implemented. Just mimic the socket part of the _script.js_ file
 
-###Changing the room settings
+### Changing the room settings
 
 On a view from a browser, access the side pannel and modify the default settings. Clicking the 'fire' button will reset the game with the desired settings.
 
